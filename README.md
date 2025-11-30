@@ -20,11 +20,11 @@ cd ml_prod
 # 2. Установка зависимостей
 pip install -r requirements.txt
 
-# 3. Загрузка данных через DVC
-dvc pull
-
-# 4. Запуск пайплайна
+# 3. Запуск пайплайна
 dvc repro
+
+# 4. Загрузка данных через DVC
+dvc pull
 
 # 5. Запуск MLflow UI (в отдельном терминале)
 mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000
